@@ -1,0 +1,59 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <!--#region Common Text-->
+    <sys:String
+        x:Key="LanguageName">Default Language</sys:String>
+    <sys:String
+        x:Key="WindowTitleText">StarcraftII Text Translation</sys:String>
+    <sys:String
+        x:Key="WindowTitleCurrentMod"
+        xml:space="preserve">  Mod:</sys:String>
+    <sys:String
+        x:Key="Common_PathSelectButton_Content">Path</sys:String>
+    <sys:String
+        x:Key="Common_ConfirmButton_Content">Confirm</sys:String>
+    <sys:String
+        x:Key="Common_ClearButton_Content">Clear</sys:String>
+    <sys:String
+        x:Key="Common_SC2Components_Info">SCII Component Folders</sys:String>
+    <sys:String
+        x:Key="Common_SplitPunctuation"
+        xml:space="preserve">, </sys:String>
+    <sys:String
+        x:Key="Common_CutButton_Content">Cut</sys:String>
+    <sys:String
+        x:Key="Common_CopyButton_Content">Copy</sys:String>
+    <sys:String
+        x:Key="Common_PasteButton_Content">Paste</sys:String>
+    <!--#endregion-->
+
+    <!--#region Window Text-->
+    <sys:String
+        x:Key="RibbonContextualTabGroup_Config_Header">Config</sys:String>
+    <sys:String
+        x:Key="RibbonTabItem_Config_Header">Config</sys:String>
+    <sys:String
+        x:Key="RibbonTabItem_TranslateSelection_Header">Translate Selection</sys:String>
+    <sys:String
+        x:Key="RiibonGroupBox_CFG_Language_Header">UI Language</sys:String>
+    <sys:String
+        x:Key="LogGroupBox_Log_Header">Log</sys:String>
+    <sys:String
+        x:Key="MenuItem_LogClear_Header">Clear Log</sys:String>
+    <sys:String
+        x:Key="TextBox_TS_Path_Header">Translate Target Path:</sys:String>
+    <!--#endregion-->
+
+    <!--#region Log-->
+    <sys:String
+        x:Key="Log_ChangeSoftwareLanguageLogMessage_Text_0"
+        xml:space="preserve">Change software language to </sys:String>
+    <sys:String
+        x:Key="Log_ChangeSoftwareLanguageLogMessage_Text_1">.</sys:String>
+    <!--#endregion-->
+
+
+</ResourceDictionary>

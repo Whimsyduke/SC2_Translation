@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SyntaxDefinition name="LocalText" extensions=".txt" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
+  <Color name="DataTextID" foreground="Blue" exampleText="Unit/Name/ZhanYing" />
+  <Color name="GalaxyTextID" foreground="Red" exampleText="Param/Value/lib_DA0A55AD_02EA1C62" />
+  <Color name="InfoTextID" foreground="Brown" exampleText="DocInfo/DescLong" />
+  <Color name="CustomTextID" foreground="Green" exampleText="DOCSTRR_ABC123" />
+  <Color name="EqualSign" foreground="Magenta" fontWeight="bold" exampleText="=" />
+  <!-- This is the main ruleset. -->
+  <RuleSet>
+    <Rule color="DataTextID">
+      (?&lt;=^|\n)((Abil/Name/|Behavior/Name/|Button/Name/|Effect/Name/|Unit/Name/|Weapon/Name/)[0-9a-zA-Z_]*)(?==)
+    </Rule>
+    <Rule color="GalaxyTextID">
+      (?&lt;=^|\n)Param/Value/lib_[0-9a-fA-F]{8}_[0-9a-fA-F]{8}(?==)
+    </Rule>
+    <Rule color="InfoTextID">
+      (?&lt;=^|\n)DocInfo/(?==)
+    </Rule>
+    <Rule color="CustomTextID">
+      (?&lt;=^|\n)DOCSTRR_[0-9a-zA-Z_]*(?==)
+    </Rule>
+    <Rule color="EqualSign">
+      (?&lt;=(^|\n)((Abil/Name/|Behavior/Name/|Button/Name/|DOCSTRR_|Effect/Name/|Unit/Name/|Weapon/Name/)[0-9a-zA-Z_]*|DocInfo/DescLong|DocInfo/Name|Param/Value/lib_[0-9a-fA-F]{8}_[0-9a-fA-F]{8}))=
+    </Rule>
+  </RuleSet>
+</SyntaxDefinition>
